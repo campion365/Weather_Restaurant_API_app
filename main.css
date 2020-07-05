@@ -1,0 +1,160 @@
+*{
+  box-sizing: border-box;
+}
+
+body{
+  margin: 0;
+  padding:0;
+}
+header{
+  display: inline-block;
+  width:100%;
+  background-color: darkblue;
+  color: white;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 600;
+  text-align: center;
+  font-size: 20px;
+}
+
+#header-food, #header-weather{
+  padding-bottom: 10px;
+}
+
+h2{
+  font-family: 'Raleway', sans-serif;
+  font-weight: 600;
+  text-align: center;
+  font-size: 16px;
+}
+
+.help{
+  float: right;
+  font-size:16px;
+  margin-right: 5px;
+}
+
+form{
+  height: auto;
+  text-align: center;
+  font-weight: 600;
+  font-size: 20px;
+  border-color: #b3e6ff;
+}
+
+ul{
+  list-style-type: none;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+fieldset{
+  padding-top:10px;
+  padding-bottom:10px;
+}
+
+
+#restaurant-area, #weather-area{
+  display: block;
+  align-items: center;
+  font-family: 'Poppins';
+  font-weight: 400;
+  font-size: 18px;
+  align-content: center;
+}
+
+#Zip-Field{
+  width: 50%;
+  height: 30px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  font-family: 'Poppins';
+}
+
+#submit{
+  color:black;
+  background-color: lightgray;
+  font-family: 'Poppins';
+  font-weight: 600;
+  text-align: center;
+  font-size: 16px;
+  padding: 2px 10px 2px 10px;
+  margin-top:10px;
+  margin-right:10px;
+}
+
+#newSearch, #newSearchbottom{
+  color:black;
+  background-color: #ffff66;
+  font-family: 'Poppins';
+  font-weight: 600;
+  text-align: center;
+  font-size: 16px;
+  padding: 2px 5px 2px 5px;
+}
+
+#newSearchbottom{
+ float: right;
+ margin-right: 10px;
+}
+
+.results-header{
+  background-color: #ffd966;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 600;
+  text-align: center;
+  font-size: 26px;
+  margin-left: 20%;
+  margin-right:20%;
+}
+
+
+h3 {
+    display: block;
+    text-align: center;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
+img{
+  display:block;
+  margin-left: auto;
+  margin-right:auto;
+  height:75%;
+  width:75%;
+}
+
+
+.hidden{
+  display: none;
+  }
+
+
+@media only screen and (min-width: 768px){
+img{
+  height:65%;
+  width:65%;
+}
+h3 {
+  display: block;
+  align-content: center;
+}
+}
+
+@media only screen and (min-width: 1200px){
+
+.results-header{
+  margin-left: 0%;
+  margin-right: 0%;
+}
+
+
+  img{
+    width:80%;
+  }
+  
+  #Zip-Field{
+    width: 20%;
+    height: 40px;
+  }
+  }

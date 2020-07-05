@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Recipe API App</title>
+    <link rel="stylesheet" href="main.css">
+    <script src="https://kit.fontawesome.com/7fcb00b561.js" crossorigin="anonymous"></script>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&;family=Raleway:wght@200;400;600&;display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header>
+
+        <h1>Local Weather and Restaurants Tool</h1>
+        <i id="header-weather" aria-label="cloud icon" class="fas fa-cloud-sun"></i>
+        <i id="header-food" aria-label="food icon" class="fas fa-utensils"></i>
+        <section id="header-menu">
+        </section>
+    </header>
+    <form>
+        <fieldset>
+            <legend>Enter Zip Code for Forecast & Nearby Restaurants</legend>
+            <label for="Zip-Field">Zip Code</label><br>
+            <input type="text" id="Zip-Field" name="Zip-Field" required><br>
+            <input type="submit" id="submit" value="Show Results">
+            <button id="newSearch" class='hidden'>New Search</button>
+        </fieldset>
+    </form>
+    <button class='help'>Help</button>
+
+    <section id="weather-section">
+        <p id='js-error-msg' class='hidden'></p>
+        <div id="forecast-area" class='hidden'> </div>
+    </section>
+
+    <section id="restaurant-section">
+        <p id='js-restaurant-error-msg' class='hidden'></p>
+        <div id="restaurant-area" class='hidden'>
+        </div>
+    </section>
+    <button id="newSearchbottom" class='hidden'>New Search</button>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.js"
+        integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+    <script src="index.js"></script>
+    <script src="zipCodeList.js"></script>
+</body>
+
+</html>
